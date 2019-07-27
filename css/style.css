@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Exo 2', sans-serif;
+
+}
+header {
+    text-align: center;
+    color: #fff;
+    background: #2f343a;
+    padding: 2em;
+    font-size: .7em;
+    text-transform: uppercase;
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.container {
+    margin: 0 auto;
+    margin: .5em;
+
+}
+.cta {
+    text-align: center;
+    border-bottom: 4px solid #2f343a;
+}
+
+/* ************ DRY CSS Styles ************ */
+.light {
+    font-weight 300;
+    opacity: .4;
+}
