@@ -100,10 +100,30 @@
             <fieldset>
                 <legend>Newsletter</legend>
             </fieldset>
-            <p>Select the newsletters you would like to receive</p>
-            <label class="displayNone">Newsletter Type</label>
-            <input type="checkbox" for
+            <label>Select the newsletters you would like to receive</label>
+            <br>
+            <input type="checkbox" id="htmlNews" value="newsletter_html" name="user_newsletter"><label for="htmlNews">HTML News</label>
+            <br>
+            <input type="checkbox" id="cssNews" value="newsletter_css"
+            name="user_newsletter"><label for="cssNews">CSS News</label>
+            <br>
+            <input type="checkbox" id="jsNews" value="newsletter_js"
+            name="user_newsletter"><label for="jsNews">Javascript News</label>
+            <br>
+            <label>Newsletter Format</label>
+            <br>
+            <input type="radio" id="htmlFormat" value="htmlFormat" name="user_format"><label for="htmlFormat">HTML Format</label>
+            <br>
+            <input type="radio" id="plaintextFormat" value="plaintextFormat" name="user_format"><label
+            for="plaintextFormat">Plain text</label>
+            <br>
+            <label for="otherTopics">Other topics you'd like to hear about</label>
+            <br>
+            <textarea id="otherTopics" name="user_otherTopics"></textarea>
+            <br>
+            <button type="submit">Sign Up</button>
         </form>
+        <p class="footer">Copyright The Code Review</p>
     </div>
 </body>
 </html>
