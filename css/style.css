@@ -1,9 +1,17 @@
+/* can't get dropdown arrows in #state on right side of input when in mobile mode, "Choose State" shows twice because of label and first option. How do I get the label to show when the #state input is not selected */
+
 * {
     box-sizing: border-box;
 }
 html {
     font-family: 'Exo 2', sans-serif;
-
+}
+body {
+    width: 100%;
+}
+main {
+    width: 95%;
+    margin: 0 auto;
 }
 header {
     text-align: center;
@@ -17,18 +25,95 @@ h1 {
     margin-top: 0;
     margin-bottom: 0;
 }
-.container {
+.container,
+.cta {
     margin: 0 auto;
-    margin: .5em;
-
 }
 .cta {
     text-align: center;
     border-bottom: 4px solid #2f343a;
 }
+h2 {
+    margin: 0 1em;
+    font-size: 1.3em;
+}
+.container {
+    border-top: 2px solid #2f343a;
+    margin-top: 3px;
+}
+fieldset {
+    border: none;
+    margin: 1.5em 0 0 0;
+    padding: 0;
+
+}
+legend {
+   font-size: 1.3em;
+   margin: 2em 0 1em 0;
+   font-weight: bold; 
+}
+label {
+    padding: .5em 0;
+    margin: .5em 0;
+}
+input,
+select,
+textarea,
+button {
+    border: none;
+    background: rgb(241, 241, 241);
+    width: 100%;
+    height: 2.5em;
+    border-radius: 5px;
+    margin: .5em 0;
+    padding: 0 1em;
+}
+input:focus {
+    border: 1px solid darkblue;
+}
+input::placeholder {
+    text-align: right;
+    font-style: italic;
+    font-size: .9em;
+    padding-right: .4em;
+}
+select {
+    padding-left: .5em;
+}
+input#zipcode {
+    width: 50%;
+}
+.emptyDiv {
+    border-top: 2px solid #2f343a;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    width: 30px;
+    height: 1em;
+}
+.newsletter {
+    margin: 20px 0;
+}
+textarea {
+    height: 6em;
+}
+button {
+    height: 3em;
+    color: white;
+    background: #4EBBB5;
+    font-size: 1.3em;
+}
+.footer {
+    text-align: center;
+    font-style: italic;
+}
 
 /* ************ DRY CSS Styles ************ */
-.light {
+.light,
+label,
+input::placeholder,
+select#state,
+.footer {
     font-weight 300;
-    opacity: .4;
+    opacity: .45;
 }
