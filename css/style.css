@@ -72,7 +72,9 @@ button {
 }
 input:focus {
     border: 1px solid darkblue;
+    outline: none;
 }
+/* http://stackoverflow.com/questions/3397113/ddg#3397158 to remove outline */
 input::placeholder {
     text-align: right;
     font-style: italic;
