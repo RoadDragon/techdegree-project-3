@@ -32,6 +32,7 @@ h1 {
 .cta {
     text-align: center;
     border-bottom: 4px solid #2f343a;
+    padding-top: 2em;
 }
 h2 {
     margin: 0 1em;
