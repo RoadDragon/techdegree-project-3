@@ -11,13 +11,7 @@
         href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700&display=swap"
         rel="stylesheet">
 
-    <!-- <script type="text/javascript">
-        function ChangeLabel() {
-            var selectElem = document.getElementById("state");
-            var groups = selectElem.getElementsByTagName("optgroup");
-            groups[0].label = newLabel.value;
-        }
-    </script> -->
+
 
 </head>
 <body>
@@ -110,7 +104,7 @@
                             <option value="WV">West Virginia</option>
                             <option value="WI">Wisconsin</option>
                             <option value="WY">Wyoming</option>
-                        </optgroup>
+                        
                     </select>
                 </div>
                 <div class="flex alignLeft">
@@ -130,10 +124,12 @@
                     <div class="checkboxItem">
                         <input type="checkbox" id="htmlNews" value="newsletter_html" name="user_newsletter"><label for="htmlNews" id="newsletterLabel">HTML News</label>
                     </div>
+
                     <div class="checkboxItem">
                         <input type="checkbox" id="cssNews" value="newsletter_css"
                         name="user_newsletter"><label for="cssNews">CSS News</label>
                     </div>
+
                     <div class="checkboxItem">
                         <input type="checkbox" id="jsNews" value="newsletter_js"
                         name="user_newsletter"><label for="jsNews">Javascript News</label>
@@ -145,17 +141,20 @@
                     <div class="checkboxItem">
                         <input type="radio" id="htmlFormat" value="htmlFormat" name="user_format"><label for="htmlFormat">HTML Format</label>
                     </div>
+
                     <div class="checkboxItem">
                         <input type="radio" id="plaintextFormat" value="plaintextFormat" name="user_format"><label
                         for="plaintextFormat">Plain text</label>
                     </div>
+
                     <label for="otherTopics">Other topics you'd like to hear about</label>
                     <div class="checkboxItem">
                     <textarea id="otherTopics" name="user_otherTopics"></textarea>
                     </div>
                     <button type="submit">Sign Up</button>
-                    </fieldset>
-                </div>
+                </div>                
+                </fieldset>
+                </div>                
             </form>
             <p class="footer">Copyright The Code Review</p>
         </div>

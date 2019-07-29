@@ -50,8 +50,8 @@ h2 {
 .background:hover {
     background: rgb(184, 236, 228);
     transform: scale(1.1);
-    
 }
+/* Code: https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
 fieldset {
     border: none;
     margin: 0;
@@ -100,7 +100,7 @@ input[placeholder*="Required"] {
 select {
     padding-left: .5em;
 }
-input#zipcode {
+#zipcode {
     width: 50%;
     margin-bottom: 2em;
 }
@@ -140,9 +140,9 @@ button {
 .light,
 label,
 input::placeholder,
-select#state,
+#state,
 .footer {
-    font-weight 300;
+    font-weight: 300;
     opacity: .45;
 }
 
@@ -170,7 +170,7 @@ label {
     width: 40%;
     padding-top: 0;
 }
-input#zipcode {
+#zipcode {
     width: 40%;
 }
 .alignLeft {
