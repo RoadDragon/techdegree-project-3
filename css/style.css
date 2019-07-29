@@ -1,4 +1,4 @@
-/* can't get dropdown arrows in #state on right side of input when in mobile mode, "Choose State" shows twice because of label and first option. How do I get the label to show when the #state input is not selected */
+
 
 * {
     box-sizing: border-box;
@@ -134,7 +134,7 @@ select#state,
 
 
 /* ************ Media Queries ************ */
-@media (min-width: 768px) {
+ @media (min-width: 768px) {
 
 html {
     margin: 0 auto;
@@ -142,16 +142,53 @@ html {
 main {
     width: 59%;
 }
+.flex {
+    display: flex;
+}
+label {
+    width: 40%;
+    padding-top: 0;
+}
+input#zipcode {
+    width: 40%;
+}
+.alignLeft {
+    width: 70%;
+}
+/*
 .cta {
     padding-top: 3em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 input,
 label {
-    display: inline;
+    float: left;
 }
+label  {
+    width: 30%;
+    padding-top: 0;
+    padding-top: 0;
+    margin-top: .5em;
+    vertical-align: center;
+}
+input[type="text"],
+select {
+    width: 70%;
+}
+
+
 
 input#zipcode {
     width: 25%;
+    margin-top: 0;
+    margin-bottom: 2em;
+    padding-top: 0;
 }
+} */
+
+/* ************ CLEARFIX ************ */
+.clearfix::after {
+    content: "";
+    display: table;
+  clear: both;
 }
