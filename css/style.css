@@ -124,3 +124,18 @@ select#state,
     font-weight 300;
     opacity: .45;
 }
+
+
+
+/* ************ Media Queries ************ */
+@media (min-width: 768px) {
+
+html {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+input#zipcode {
+    width: 25%;
+}
+}
