@@ -41,18 +41,20 @@ h2 {
 }
 .container {
     border-top: 2px solid #2f343a;
-    margin-top: 3px;
+    margin-top: 5px;
 }
 fieldset {
     border: none;
-    margin: 1.5em 0 0 0;
-    padding: 0;
+    margin: 0;
+    padding: 0 .5em;
+
 
 }
 legend {
    font-size: 1.3em;
-   margin: 2em 0 1em 0;
+   margin: 0 0 1em 0;
    font-weight: bold; 
+   padding-top: 4em;
 }
 label {
     padding: 1em 0;
@@ -76,11 +78,11 @@ input:focus {
     outline: none;
 }
 /* http://stackoverflow.com/questions/3397113/ddg#3397158 to remove outline */
-input::placeholder {
+input[placeholder*="Required"] {
     text-align: right;
     font-style: italic;
     font-size: .9em;
-    padding-right: .4em;
+    padding-right: 1em;
 }
 select {
     padding-left: .5em;
@@ -142,6 +144,12 @@ html {
 main {
     width: 59%;
 }
+h2 {
+    font-size: 2em;
+}
+fieldset {
+    margin-top: 3em;
+}
 .flex {
     display: flex;
 }
@@ -155,40 +163,9 @@ input#zipcode {
 .alignLeft {
     width: 70%;
 }
-/*
-.cta {
-    padding-top: 3em;
-    padding-bottom: 1em;
 }
-input,
-label {
-    float: left;
+@media (min-width: 2024px) {
+main {
+    max-width: 40%;
 }
-label  {
-    width: 30%;
-    padding-top: 0;
-    padding-top: 0;
-    margin-top: .5em;
-    vertical-align: center;
-}
-input[type="text"],
-select {
-    width: 70%;
-}
-
-
-
-input#zipcode {
-    width: 25%;
-    margin-top: 0;
-    margin-bottom: 2em;
-    padding-top: 0;
-}
-} */
-
-/* ************ CLEARFIX ************ */
-.clearfix::after {
-    content: "";
-    display: table;
-  clear: both;
 }
