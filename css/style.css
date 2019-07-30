@@ -68,6 +68,8 @@ label {
     margin: 1em 0;
 }
 input[type="text"],
+input[type="tel"],
+input[type="email"]
 select,
 textarea,
 button {
