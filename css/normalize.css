@@ -347,3 +347,10 @@ template {
 [hidden] {
   display: none;
 }
+
+/* fix inputs for select field and email field */
+input[type="email"],
+select {
+  margin: 0;
+  padding: 0;
+}
